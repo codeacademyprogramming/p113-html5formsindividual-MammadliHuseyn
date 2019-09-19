@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.4.95/css/materialdesignicons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+    <title>Document</title>
+    <style>
+        body {
+            background: #2A4071;
+        }
+
+        * {
+            box-sizing: border-box;
+            color: white;
+            text-decoration: none;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+
+        header {
+            border: solid;
+            border-color: #17223C;
+            background: #17223C;
+            text-align: center;
+            border-width: 0.001em;
+            font-size:15px;
+        }
+
+        form {
+            background: #1C2B4A;
+            width: 450px;
+        }
+
+        input[type="submit"],
+        input[type="password"],
+        input[type="email"] {
+            width: 400px;
+            margin-top: 20px;
+            margin-left: 20px;
+            height: 35px;
+            border-radius: 5px;
+            height: 50px;
+        }
+
+        input[type="password"],
+        input[type="email"] {
+            background: #13192C;
+            border: none;
+        }
+
+        input[type="submit"] {
+            background: #00CE68;
+            border-top-color: #00CE68;
+            border-left-color: #00CE68;
+            border-right-color: #00CE68;
+        }
+
+        div>section,
+        div>a {
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        div>section {
+            margin-left: 21px;
+        }
+
+        div>a {
+            margin-left: 142px;
+        }
+        .social{
+            margin-top:20px;
+        }
+        .twitter{
+            margin-left:62px;
+            background:#2EA7D3;
+            border:none;
+            border-radius:2px;
+            height:40px;
+        }
+        .facebook{
+            margin-left:21px;
+            background:#3D5B9C;
+            border:none;
+            border-radius:2px;
+            height:40px;
+        }
+        .formfooter{
+            margin-top:20px;
+            border: solid;
+            border-color: #17223C;
+            background: #17223C;
+            border-width: 10px;
+            display:inline-block;
+        }
+        .formfooter>a{
+            margin-left:12px;
+
+        }
+        .formfooter>button{
+            margin-left:167px;
+            background: #00CE68;
+            border:none;
+            border-radius:3px;
+            width:100px;
+            height:43px;
+        }
+        form{
+            margin-left:550px;
+            margin-top:50px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form class="loginForm">
+        <header>
+            <h3>Sign In</h3>
+        </header>
+        <div class="mailpass">
+            <input name="email" type="email" id="mail" placeholder="User Name Or Email">
+        </div>
+        <div class="mailpass">
+            <input name="password" type="password" id="pass" placeholder="User Password">
+        </div>
+        <div>
+            <input type="submit" value="LOGIN">
+        </div>
+        <div>
+            <section><input type="checkbox" value="Remember Me">
+                <label for="Remember me">Remember Me</label></section>
+            <a href="#">Forgot Password?</a>
+        </div>
+        <div class="social">
+            <button href="#" class="facebook"><i class="mdi mdi-facebook">Login With Facebook</i></button>
+            <button href="#" class="twitter"><i class="mdi mdi-twitter">Login With Twitter</i></button>
+        </div>
+        <div class=formfooter>
+            <a href="#">Need new account ?</a>
+            <button href="#">Sign Up</button>
+        </div>
+    </form>
+</body>
+
+</html>
