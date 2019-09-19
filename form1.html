@@ -31,6 +31,12 @@
             border-width: 0.001em;
             font-size:15px;
         }
+        header h2{
+            font-weight: 800;
+            margin:0;
+            margin-top:12px;
+            margin-bottom:12px;
+        }
 
         form {
             background: #1C2B4A;
@@ -55,6 +61,7 @@
         }
 
         input[type="submit"] {
+            font-weight: 800;
             background: #00CE68;
             border-top-color: #00CE68;
             border-left-color: #00CE68;
@@ -65,15 +72,13 @@
         div>a {
             display: inline-block;
             margin-top: 20px;
+            margin-left: 142px;
         }
 
         div>section {
             margin-left: 21px;
         }
 
-        div>a {
-            margin-left: 142px;
-        }
         .social{
             margin-top:20px;
         }
@@ -96,7 +101,7 @@
             border: solid;
             border-color: #17223C;
             background: #17223C;
-            border-width: 10px;
+            border-width: 0 10px 6px 10px;
             display:inline-block;
         }
         .formfooter>a{
@@ -115,6 +120,17 @@
             margin-left:550px;
             margin-top:50px;
         }
+        .mdi-lock,.mdi-account{
+            font-size:17px;
+            position: absolute;
+            margin-left:27px;
+            margin-top:35px;
+            color:#03CA67;
+        }
+        .mailpass input{
+                padding-left:27px
+        }
+        
 
     </style>
 </head>
@@ -122,12 +138,14 @@
 <body>
     <form class="loginForm">
         <header>
-            <h3>Sign In</h3>
+            <h2>Sign In</h2>
         </header>
         <div class="mailpass">
+                <i class="mdi mdi-account"></i>
             <input name="email" type="email" id="mail" placeholder="User Name Or Email">
         </div>
         <div class="mailpass">
+                <i class="mdi mdi-lock"></i>
             <input name="password" type="password" id="pass" placeholder="User Password">
         </div>
         <div>
